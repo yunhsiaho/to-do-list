@@ -9,19 +9,27 @@
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
         <title>Todo list</title>
     </head>
-    <body>
+    <body class="light">
         <section>
             <div class="container">
-                <h3>TO DO</h3>
+                <span  class="dark-mode">
+                    <input type="checkbox" name="dark-mode">Dark mode
+                </span>
+
+            <h3>TO DO</h3>
                 <form action="javascript:void(0);">
                     <input type="text" class="searchbar" placeholder="I need to do...">
                     <button class="btn add-task"> + </button>
                 </form>
                 <div class="task-container">
-                    <!-- <div class="task-line">
-                        test
-                        <hr>
-                    </div> -->
+                    <!-- 
+                        <div class="task-line">
+                            <input type="checkbox" name="task-checkbox" class="task-checkbox">
+                            <label>afea</label>
+                            <p class="delete-btn btn">delete</p>
+                            <hr>
+                        </div>
+                    -->
                 </div>
             </div>
             <button class="btn clear-all">Clear All</button>

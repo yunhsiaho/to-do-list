@@ -1,11 +1,23 @@
 /* GENERAL SETTING */
 *{
     font-family: 'JetBrains Mono', monospace;
+    color:#5D5B5B;
+
 }
 
 body{
-    background: linear-gradient(135deg, rgba(255,119,119,1) 0%, rgba(255,176,120,0.74) 35%, rgba(255,215,73,1) 100%);
     background-attachment: fixed;
+    background: linear-gradient(135deg, rgba(255,119,119,1) 0%, rgba(255,176,120,0.74) 35%, rgba(255,215,73,1) 100%);
+}
+
+
+.dark{
+    background: linear-gradient(135deg, rgb(51 2 100) 0%, rgb(19 8 56 / 91%) 35%, rgb(14 16 96) 100%);
+}
+
+.darkArea{
+    background: #000;
+    box-shadow: -4px 6px 7px 0px rgb(30 14 78) inset;
 }
 
 section{
@@ -17,9 +29,15 @@ section{
 .btn{
     border: none;
     background: none;
-    color:#5D5B5B;
     transition: 0.2s;
+    cursor: pointer;
 }
+
+.darkbtn{
+    color: rgb(124 119 255);
+    text-shadow: .5px .5px 2px  #5D5B5B;
+
+} 
 
 .btn:hover{
     color: rgba(255,119,119);
@@ -31,15 +49,23 @@ section{
 }
 
 .container{
-    width: 50%;
+    width: 40%;
 }
 
 /* DARK MODE */
+.dark-mode{
+    display: flex;
+    justify-content: end;
+    font-weight: 300;
+    margin-top: 1.5rem;
+}
+
+
 
 /* TITLE */
 .container h3{
     margin-top: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     font-size: 40px;
     font-weight: 500;
     color:#5D5B5B;
@@ -92,6 +118,29 @@ form{
 .task-line{
     color:#5D5B5B;
     font-size: 18px;
+}
+
+.task-checkbox[type=checkbox]:checked +label{
+    text-decoration: line-through; 
+  }
+
+.delete-btn{
+    color: rgb(253, 36, 36);
+    display: inline;
+    font-size: 12px;
+    position: relative;
+    margin: 0;
+    margin-top: .4rem;
+    float: right;
+}
+
+.modify-btn{
+    color: rgb(5 168 25);
+    display: inline;
+    font-size: 12px;
+    position: relative;
+    margin-top: .4rem;
+    margin-left: 12rem;
 }
 
 /* CLEAR ALL */
